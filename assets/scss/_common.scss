@@ -1,0 +1,60 @@
+@use 'var' as *;
+@use 'mixin' as *;
+
+body{
+    box-sizing: border-box;
+    color:$text-color1;
+    font-family: $Caslon,$Serif,$Sans, serif;
+    overflow-x: hidden; // 追加
+}
+
+h2{
+    font-size: 54px;
+    @include mq(mb) {
+        font-size: 24px;
+    }
+}
+
+h3{
+    font-size: 24px;
+}
+
+p{
+    font-size: 16px;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: $text-color1;
+}
+
+.section{
+    padding:200px 0;
+    @include mq(mb) {
+        padding: 40px 0;
+    }
+}
+
+.concept-containar{
+    max-width: 1080px;
+    margin: 0 auto;
+    @include mq(mb) {
+        padding: 0 8px; // 追加
+    }
+}
+.news-containar{
+    max-width: 1080px;
+    margin: 0 auto;
+    @include mq(mb) {
+        padding: 0 8px; // 追加
+    }
+}
+.sp-none{
+    @include mq(mb) {
+        display: none;
+    }
+}

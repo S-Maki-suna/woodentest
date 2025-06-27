@@ -1,0 +1,57 @@
+@use "var" as *;
+@use 'mixin' as *;
+
+.section-head{
+    margin-bottom: 96px;
+    &--ja{
+        margin-bottom: 16px;
+        font-size: 24px;
+        font-weight: 600;
+    }
+    &--brown{
+        color: $main-color2;
+    }
+    &--white{
+        color: $text-color2;
+    }
+
+}
+
+.nav {
+    display: flex;
+    column-gap: 32px;
+
+    &-menu {
+        display: flex;
+        align-items: center;
+        column-gap: 32px;
+
+    }
+}
+
+.btn{
+    width: 212px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: $Sans;
+    border-radius: 4px;
+    column-gap: 4px;
+    &--fill {
+        background-color: $main-color1;
+        color: $text-color2;
+    }
+    &--stroke {
+        background-color: transparent;
+        border: 2px solid $main-color1;
+        color: $main-color1;
+    }
+    .fa-envelope {
+        font-size: 16px;
+    }
+}
+
+.fa-instagram {
+    font-size: 24px;
+}
